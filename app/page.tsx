@@ -15,7 +15,7 @@ const URUN_LISTESI = [
 ];
 
 export default function TeknoCCS_Final() {
-  const [seciliUrun, setSeciliUrun] = useState(null);
+ const [seciliUrun, setSeciliUrun] = useState<any>(null);
   const [gonderildi, setGonderildi] = useState(false);
 
   return (
@@ -130,7 +130,7 @@ export default function TeknoCCS_Final() {
                   <Monitor size={120} strokeWidth={1} />
                 </div>
                 <div>
-                  <p className="text-xs font-black text-blue-600 uppercase tracking-widest mb-4 italic">{seciliUrun.marka} • {seciliUrun.kat}</p>
+                  <p className="text-xs font-black text-blue-600 uppercase tracking-widest mb-4 italic">{seciliUrun?.marka} • {seciliUrun.kat}</p>
                   <h3 className="text-5xl font-black mb-8 leading-tight tracking-tighter">{seciliUrun.ad}</h3>
                   <p className="text-slate-500 text-lg font-medium mb-10 leading-relaxed italic">{seciliUrun.detay}</p>
                   <div className="text-4xl font-black mb-10">{seciliUrun.fiyat} <span className="text-sm font-bold text-slate-400 italic">+ KDV</span></div>
