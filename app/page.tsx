@@ -66,7 +66,7 @@ export default function TeknoCCS_Final() {
         <div className="grid md:grid-cols-4 gap-8">
           {URUN_LISTESI.map((urun) => (
             <motion.div 
-              key={urun.id} whileHover={{ y: -12 }} onClick={() => setSeciliUrun(urun)}
+              key={urun.id} whileHover={{ y: -12 }} onClick={() => setSeciliUrun(urun as any)}
               className="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all cursor-pointer group"
             >
               <div className="h-44 bg-slate-50 rounded-[2.5rem] mb-8 flex items-center justify-center text-slate-200 group-hover:text-blue-600 transition-colors">
